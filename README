@@ -1,0 +1,8 @@
+The homework contains two files:
+	relay.cpp is to run on the relay, and client.cpp can be run on a client terminal.
+
+To compile, use command "make all" or "sudo make all", it will produce two executable file.
+
+To start the relay, give it 2 arguments about the hostname and port number of BGPMon, like "./relay bgpdata.netsec.colostate.edu 50001".
+
+To start the client, give it 4 arguments indicates the hostname, port_number it connects to and the ip_address and as_num it looks for, like "./client 192.68.0.111 8000 129.82.138.26 12145". Here, the 192.68.0.111 is the relay's ip address, 8000 is the default port number it listens to a connection, the 129.82.138.26 and 12145 are the specified bgp_message we are trying to find.
